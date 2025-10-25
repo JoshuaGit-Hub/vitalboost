@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --verde-principal:#00C853;
+    --cinza-escuro: #212121;
+    --branco: #ffff;
+    --preto-suave:#333333;
+
+    --font-titulos:'montserrat', sans-serif;
+    --font-textos:'open sans', sans-serif;
+}
