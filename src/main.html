@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vital boost-Energy MAX</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
@@ -13,9 +14,10 @@
         <nav class="navbar">
             <div class="marca-container">
                 <a href="#home"><img src="assets/images/logo-suplemento-vital_boost-editada.png"
-                        alt="logo da vital boost"></a>
-                <a href="#home" class="marca">VitalBoost Energy MAX</a>
+                        alt="logo da vital boost" id="logo-nav"></a>
+                        <a href="#home" id="marca">VitalBoost Energy MAX</a>
             </div>
+
             <ul>
                 <li><a href="#home">Inicío</a></li>
                 <li><a href="#produtos">Produtos</a></li>
@@ -23,7 +25,7 @@
                 <li><a href="#contato">Contato</a></li>
             </ul>
 
-            <button id="btn-carrinho"><i class="fa-solid fa-cart-shopping"></i></button>
+            <button id="btn-carrinho"><i class="fa-solid fa-cart-shopping" id="carrinho_icon"></i></button>
         </nav>
     </header>
 
@@ -49,7 +51,8 @@
                             class="text-max">MAX</span></p>
                     <div id="produtos-container">
                         <div id="card-energy_700">
-                            <img src="assets/images/energy_max-img.png" width="200px" alt="Imagem do suplemento Vital Boost Energy MAX 700g">
+                            <img src="assets/images/energy_max-img.png" width="200px"
+                                alt="Imagem do suplemento Vital Boost Energy MAX 700g">
                             <h3>Energy MAX 700g</h3>
                             <p>100% vegano. Pré-treino natural com café e taurina sintética</p>
                             <p class="preco">R$ 19,90</p>
@@ -95,14 +98,14 @@
                         <img src="assets/images/depoimento-selfie-ana.jpg" alt="selfie da cliente Ana.S">
                         <p>"O Vital boost Energy MAX realmente mudou minha rotina de treinos. Sinto-me mais energizado
                             e focado!"</p>
-                        <h4>- Ana S.</h4>   
+                        <h4>- Ana S.</h4>
                     </div>
                     <div class="depoimento-cards">
                         <img src="assets/images/depoimento-selfie-lucas.jpg" alt="selfie do cliente Lucas M.">
                         <p>"Adoro que é um suplemento vegano. Além disso, o sabor é ótimo e não me deixa nervoso como
                             outros energéticos."</p>
-                        <h4>- Lucas M.</h4> 
-                    </div>  
+                        <h4>- Lucas M.</h4>
+                    </div>
                 </div>
             </section>
 
@@ -112,7 +115,7 @@
                 <button id="btn-contato">Entre em contato!</button>
             </section>
 
-            <div id="form-contato"  class="page">
+            <div id="form-contato" class="page">
                 <form id="contato-form">
                     <h3>Fale Conosco</h3>
                     <label for="nome">Nome:</label>
@@ -157,11 +160,40 @@
         </form>
     </div>
 
+    <section id="faq" aria-label="Perguntas frequentes">
+        <h2>Perguntas Frequentes</h2>
+        <div class="faq-list">
+            <details class="faq-iten">
+                <summary class="faq-question">Posso tomar o Energy Max todos os dias?</summary>
+                <div class="faq-answer">
+                    <p>Sim, desde que respeitando a dose indicada no rótulo. Não exceda a quantidade recomendada.</p>
+                </div>
+            </details>
+
+            <details class="faq-iten">
+                <summary class="faq-question">O Energy MAX tem contradições?</summary>
+                <div class="faq-answer">
+                    <p>Não recomendamos o uso para menores de 18 anos, gestantes ou pessoas com problemas cardíacos.
+                        Consulte um médico em caso de dúvidas.
+                    </p>
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary class="faq-question">O produto é vegano?</summary>
+                <div class="faq-answer">
+                    <p>Sim, 100% vegano. Utilizamos taurina de origem sintética.</p>
+                </div>
+            </details>
+        </div>
+    </section>
+
     <footer id="rodape">
         <p>&copy; 2025 VitalBoost. Todos os direitos reservados.</p>
     </footer>
 
     <script src="https://kit.fontawesome.com/7d9a47bb9b.js" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
