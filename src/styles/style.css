@@ -18,12 +18,18 @@ body {
     font-family: var(--font-textos);
     background-color: var(--branco);
     color: var(--preto-suave);
+    margin-top: 70px;
 }
 
 #cabecalho {
     background-color: var(--verde-principal);
     color: var(--branco);
     padding: 10px 20px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.251);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
 }
 
 .navbar {
@@ -126,3 +132,4 @@ body {
 #carrinho_icon.ativo {
     animation: carrinhoSaindo 1s cubic-bezier(0.4, 0, 0.2, 1);
 }
+
