@@ -15,20 +15,38 @@
             <div class="marca-container">
                 <a href="#home"><img src="assets/images/logo-suplemento-vital_boost-editada.png"
                         alt="logo da vital boost" id="logo-nav"></a>
-                        <a href="#home" id="marca">VitalBoost Energy MAX</a>
+                        <a href="#home" id="marca" class="link-nav">VitalBoost Energy MAX</a>
             </div>
 
             <ul>
-                <li><a href="#home">Inicío</a></li>
-                <li><a href="#produtos">Produtos</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#contato">Contato</a></li>
+                <li><a href="#home" class="link-nav">Inicío</a></li>
+                <li><a href="#produtos" class="link-nav">Produtos</a></li>
+                <li><a href="#sobre" class="link-nav">Sobre</a></li>
+                <li><a href="#contato" class="link-nav">Contato</a></li>
             </ul>
 
-            <button id="btn-carrinho"><i class="fa-solid fa-cart-shopping" id="carrinho_icon"></i></button>
+            
+            <div id="menu-hamburguer">
+                <div class="bars"></div>
+                <div class="bars"></div>
+                <div class="bars"></div>
+            </div>
+            
+            <div class="menu-hamburguer-content">
+                <ul>
+                    <li><a href="#home" class="link-nav">Inicío</a></li>
+                    <li><a href="#produtos" class="link-nav">Produtos</a></li>
+                    <li><a href="#sobre" class="link-nav">Sobre</a></li>
+                    <li><a href="#contato" class="link-nav">Contato</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 
+    <button id="btn-carrinho"><i class="fa-solid fa-cart-shopping fa-2x" id="carrinho_icon"></i></button>
+
+    <div id="overlay"></div>
+    
     <div id="home" class="page active">
         <main id="main_content">
             <section id="home">

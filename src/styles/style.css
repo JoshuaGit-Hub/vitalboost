@@ -61,7 +61,7 @@ body {
     height: auto;
 }
 
-.navbar a {
+.link-nav {
     color: var(--branco);
     text-decoration: none;
     font-weight: 550;
@@ -73,6 +73,7 @@ body {
     gap: 20px;
     margin-left: auto;
     flex-wrap: wrap;
+    margin-right: 50px;
 }
 
 .navbar li {
@@ -90,14 +91,17 @@ body {
 #btn-carrinho {
     margin-left: 60px;
     margin-right: 10px;
-    width: 50px;
-    height: 50px;
-    border: none;
-    border-radius: 10px;
-    background-color: #f3f3f3;
+    width: 70px;
+    height: 70px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: #FFFF00;
     cursor: pointer;
-    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.385);
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.248);
     transition: transform .2s ease, box-shadow .2s ease;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
 }
 
 #btn-carrinho:hover {
@@ -115,7 +119,7 @@ body {
     }
 
     30% {
-        transform: translateX(100px);
+        transform: translateX(200px);
         opacity: 0;
     }
 
@@ -133,3 +137,58 @@ body {
     animation: carrinhoSaindo 1s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.menu-hamburguer-content {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: var(--verde-principal);
+}
+
+.menu-hamburguer-content ul {
+    gap: 50px;
+}
+
+#menu-hamburguer {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 15px;
+    cursor: pointer;
+    margin-left: auto;
+    display: none;
+}
+
+.bars{
+    width: 30px;
+    height: 4px;
+    background-color: var(--branco);
+}
+
+@media screen and (max-width: 826px) {
+
+    .navbar ul {
+        display: none;
+    }
+
+    #menu-hamburguer {
+        display: inline-flex;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #marca {
+        font-size: 1.5rem;
+    }
+
+    #logo-nav {
+        width: 40px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    body {
+        margin-top: 90px;
+    }
+}

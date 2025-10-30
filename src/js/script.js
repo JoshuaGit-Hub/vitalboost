@@ -15,3 +15,11 @@ btnCarrinho.addEventListener('click', () => {
         }, 1000);
    
 });
+
+const menuHamburguer = document.querySelector('#menu-hamburguer');
+const overlay = document.querySelector('#overlay');
+const menuContent = document.querySelector('.menu-hamburguer-content');
+
+menuHamburguer.addEventListener('click', () => {
+    
+});
