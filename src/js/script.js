@@ -13,7 +13,6 @@ btnCarrinho.addEventListener('click', () => {
         setTimeout(()=>{
             iconCarrinho.classList.remove('ativo');
         }, 1000);
-   
 });
 
 const menuHamburguer = document.querySelector('#menu-hamburguer');
@@ -21,5 +20,13 @@ const overlay = document.querySelector('#overlay');
 const menuContent = document.querySelector('.menu-hamburguer-content');
 
 menuHamburguer.addEventListener('click', () => {
-    
+    menuContent.classList.toggle('ativo');
+    overlay.classList.toggle('ativo');
+});
+
+overlay.addEventListener('click', () => { 
+    if(overlay.classList.contains('ativo')){
+        menuContent.classList.remove('ativo');
+        overlay.classList.remove('ativo');
+    }else{return};
 });
