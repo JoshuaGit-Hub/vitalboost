@@ -18,7 +18,7 @@ body {
     font-family: var(--font-textos);
     background-color: var(--branco);
     color: var(--preto-suave);
-    margin-top: 70px;
+    margin-top: 65px;
 }
 
 #cabecalho {
@@ -196,7 +196,15 @@ body {
 
 /*PARTE DO HERO*/
 
+.hero {
+    background-color: var(--cinza-escuro);
+    padding: 30px;
+    display: flex;
+}
 
+.hero-content {
+    color: var(--branco);
+}
 
 @media screen and (max-width: 826px) {
 
