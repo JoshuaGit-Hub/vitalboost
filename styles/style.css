@@ -69,7 +69,25 @@ body {
 .link-nav {
     color: var(--branco);
     text-decoration: none;
-    font-weight: 550;
+    font-weight: 600;
+    position: relative;
+    padding: 8px 0;
+    transition: color 0.3s ease;
+}
+
+.link-nav::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--branco);
+    transition: width 0.3s ease;
+}
+
+.link-nav:hover::after {
+    width: 100%;
 }
 
 .navbar ul {
@@ -168,7 +186,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 4px;
-    padding: 15px;
+    padding: 10px;
     cursor: pointer;
     margin-left: auto;
     display: none;
@@ -221,6 +239,22 @@ body {
 
 #hero_text_energyMax {
     color: var(--verde-principal);
+    animation: glow 2s infinite;
+    font-size: 2.8rem;
+}
+
+@keyframes glow {
+    0%, 100% {
+        text-shadow: 
+            0 0 10px var(--verde-medio),
+            0 0 20px rgba(34, 197, 94, 0.5);
+    }
+    50% {
+        text-shadow: 
+            0 0 20px var(--verde-medio),
+            0 0 30px rgba(34, 197, 94, 0.8),
+            0 0 40px rgba(34, 197, 94, 0.4);
+    }
 }
 
 .hero-content p {
@@ -239,11 +273,12 @@ body {
     text-align: center;
     font-weight: 700;
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.253);
-    transition: background-color .3s ease;
+    transition: background-color .3s ease, transform .2s ease;
 }
 
 .cta-comprar:hover {
     background-color: #009940;
+    transform: translateY(-2px);
 }
 
 .hero-image {
@@ -261,13 +296,13 @@ body {
 
 .section-title h2 {
     font-family: var(--font-titulos);
-    font-size: 2rem;
+    font-size: 2.9rem;
     color: var(--verde-escuro);
     margin-bottom: 10px;
 }
 
 .section-title p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     color: #555;
     margin-bottom: 40px;
 }
