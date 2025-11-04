@@ -6,6 +6,10 @@
 
 :root {
     --verde-principal: #00C853;
+    --verde-escuro: #14532D;
+    --verde-medio: #22C55E;
+    --verde-claro: #A7F3D0;
+    --fundo-suave: #F0FDF4;
     --cinza-escuro: #212121;
     --branco: #ffffff;
     --preto-suave: #333333;
@@ -200,11 +204,183 @@ body {
     background-color: var(--cinza-escuro);
     padding: 30px;
     display: flex;
+    height: 70vh;
 }
 
 .hero-content {
     color: var(--branco);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#hero_text_energyMax {
+    color: var(--verde-principal);
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+}
+
+.cta-comprar {
+    border: none;
+    background-color: var(--verde-principal);
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin-top: auto;
+    display: block;
+    text-decoration: none;
+    color: var(--branco);
+    text-align: center;
+    font-weight: 700;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.253);
+    transition: background-color .3s ease;
+}
+
+.cta-comprar:hover {
+    background-color: #009940;
+}
+
+.hero-image {
+    margin-left: auto;
+}
+
+/*Produtos*/
+
+#produtos_section {
+    background: linear-gradient(180deg, var(--fundo-suave) 0%, #ffffff 100%);
+    color: var(--preto-suave);
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.section-title h2 {
+    font-family: var(--font-titulos);
+    font-size: 2rem;
+    color: var(--verde-escuro);
+    margin-bottom: 10px;
+}
+
+.section-title p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+#produtos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 50px;
+    justify-items: center;
+    background: none;
+    padding: 20px;
+}
+
+.card-produto {
+    background-color: var(--branco);
+    border-radius: 20px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform .3s ease, box-shadow .3s ease;
+    max-width: 330px;
+    position: relative;
+}
+
+.card-produto::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+    width: 100%;
+    background: linear-gradient(90deg, var(--verde-principal), var(--verde-medio));
+}
+
+.card-produto:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.images-cards-container {
+    background: linear-gradient(to right, #1B1A18, #151513);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    transition: transform .4s ease;
+}
+
+.images-cards-container img:hover {
+    transform: scale(1.1);
+}
+
+.images-cards-container img {
+    width: 180px;
+    height: auto;
+    transition: transform .3s ease;
+}
+
+.card-produto:hover img {
+    transform: scale(1.1);
+}
+
+.content-cards {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.content-cards h3 {
+    font-size: 1.5rem;
+    color: var(--verde-escuro);
+}
+
+.content-cards p {
+    font-size: 1rem;
+    color: var(--preto-suave);
+    line-height: 1.4;
+}
+
+.preco {
+    background-color: #ffeb3b;
+    color: var(--cinza-escuro);
+    font-weight: 700;
+    border-radius: 8px;
+    padding: 8px 20px;
+    display: inline-block;
+    width: fit-content;
+    margin-top: 5px;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.15);
+}
+
+.btn-produto {
+    background: linear-gradient(90deg, var(--verde-principal), var(--verde-medio));
+    color: var(--branco);
+    border: none;
+    border-radius: 10px;
+    padding: 14px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: all .3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.btn-produto:hover {
+    background: linear-gradient(90deg, #00b84d, #17a64f);
+    transform: translateY(-2px);
+}
+
+
 
 @media screen and (max-width: 826px) {
 
@@ -233,6 +409,6 @@ body {
 
 @media screen and (max-width: 425px) {
     body {
-        margin-top: 90px;
+        margin-top: 75px;
     }
 }

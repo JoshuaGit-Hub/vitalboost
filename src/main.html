@@ -53,9 +53,9 @@
             <section id="home">
                 <div class="hero">
                     <div class="hero-content">
-                        <h1>Vital boost <span id="hero_text_energyMax">Energy MAX</span></h1>
+                        <h1>VitalBoost <span id="hero_text_energyMax">Energy MAX</span></h1>
                         <p>O suplemento energético que vai transformar seu dia a dia!</p>
-                        <a href="#produtos" class="cta-comprar">Compre Agora</a>
+                        <a href="#produtos" class="cta-comprar">Compre Agora!</a>
                     </div>
                     <div class="hero-image">
                         <img src="assets/images/hero-img-original.jpg"
@@ -63,29 +63,38 @@
                     </div>
                 </div>
             </section>
-            
-            <section id="produtos">
+
+            <section id="produtos_section">
                 <div class="section-title">
-                    <h2>Produto em destaque</h2>
-                    <p>Conheça o mais novo produto da vitalBoost: <span class="text-energy">Energy</span> <span
-                            class="text-max">MAX</span></p>
-                    <div id="produtos-container">
-                        <div id="card-energy_700">
+                    <h2>Produto em destaque: <span class="text-energy">Energy</span> <span class="text-max">MAX</span></h2>
+                    <p>Conheça o mais novo produto da vitalBoost: <span class="text-energy">Energy</span>
+                        <span class="text-max">MAX</span></p>
+                </div>
+                <div id="produtos-container">
+                    <div id="card-energy_700" class="cards-produtos">
+                        <div class="images-cards-container">
                             <img src="assets/images/energy_max-img.png" width="200px"
                                 alt="Imagem do suplemento Vital Boost Energy MAX 700g">
+                        </div>
+                        <div class="content-cards">
                             <h3>Energy MAX 700g</h3>
                             <p>100% vegano. Pré-treino natural com café e taurina sintética</p>
-                            <p class="preco">R$ 19,90</p>
+                            <p class="preco">R$ 44,90</p>
                             <p>Mais vendido! 🔥</p>
-                            <button onclick="addToCart(700)">Adicionar ao carrinho</button>
+                            <button onclick="addToCart(700)" class="btn-produto">Adicionar ao carrinho</button>
                         </div>
-                        <div id="card-energy_500">
+                    </div>
+                    <div id="card-energy_500" class="cards-produtos">
+                        <div class="images-cards-container">
                             <img src="assets/images/energy_max-img-500g.png" width="200px"
                                 alt="Imagem do suplemento Vital Boost Energy MAX 500g">
+                        </div>
+                        <div class="content-cards">
                             <h3>Energy MAX 500g</h3>
                             <p>100% vegano. Pré-treino natural com café e taurina sintética</p>
-                            <p class="preco">R$ 19,90</p>
-                            <button onclick="addToCart(500)">Adicionar ao carrinho</button>
+                            <p class="preco">R$ 39,90</p>
+                            <p>Mais recomendado para iniciantes!</p>
+                            <button onclick="addToCart(500)" class="btn-produto">Adicionar ao carrinho</button>
                         </div>
                     </div>
                 </div>
