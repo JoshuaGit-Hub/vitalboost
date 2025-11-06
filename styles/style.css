@@ -23,6 +23,7 @@ body {
     background-color: var(--branco);
     color: var(--preto-suave);
     margin-top: 65px;
+    background-color: #FAFAFA;
 }
 
 #cabecalho {
@@ -285,6 +286,67 @@ body {
     margin-left: auto;
 }
 
+/*Beneficios*/
+
+#beneficios {
+    margin: 100px 0 150px 0;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+#text_section {
+    text-align: center;
+    margin-bottom: 70px;
+    font-size: 2.6rem;
+}
+
+#cards_bene_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.cards-beneficios {
+    background: linear-gradient(135deg, #A7F3D0 0%, #D1FAE5 100%);
+    color: var(--preto-suave);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 8px;
+    padding: 25px 20px;
+    min-height: 200px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cards-beneficios:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 1px 8px 20px rgba(148, 255, 193, 0.574);
+}
+
+.cards-beneficios h3 {
+    font-size: 2.5em;
+}
+
+.cards-beneficios h4 {
+    color: var(--cinza-escuro);
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: var(--font-titulos);
+}
+
+.cards-beneficios p {
+    font-family: var(--font-textos);
+    color: var(--preto-suave);
+}
+
 /*Produtos*/
 
 #produtos_section {
@@ -380,7 +442,7 @@ body {
 }
 
 #card_image-500::before {
-    content:"Mais recomendado para iniciantes!";
+    content:"Mais recomendado!";
     background-color: #ffeb3b;
     color: var(--cinza-escuro);
     font-weight: 700;
@@ -493,6 +555,6 @@ body {
 
 @media screen and (max-width: 425px) {
     body {
-        margin-top: 75px;
+        margin-top: 60px;
     }
 }
