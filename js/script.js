@@ -30,3 +30,8 @@ overlay.addEventListener('click', () => {
         overlay.classList.remove('ativo');
     }else{return};
 });
+
+function mandarMsg() {
+    const msg = 'Olá, gostaria de saber mais informações sobre os produtos que estão disponíveis.';
+    window.open(`https://wa.me/525521904656?text=${encodeURIComponent(msg)}`, '_blank');
+}

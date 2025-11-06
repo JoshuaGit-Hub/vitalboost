@@ -9,6 +9,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Open+Sans:wght@400;600&display=swap"
         rel="stylesheet">
+        <link rel="shortcut icon" href="images/logo-suplemento-vital_boost-editada.png" type="image/x-icon">
 </head>
 
 <body>
@@ -124,13 +125,15 @@
 
 
             <section id="depoimentos">
-                <h3>O que nossos clientes dizem</h3>
+                <h3>O que nossos clientes dizem:</h3>
                 <div class="depoimentos-container">
                     <div class="depoimento-cards">
                         <img src="images/depoimento-selfie-ana.jpg" alt="selfie da cliente Ana.S">
-                        <p>"O Vital boost Energy MAX realmente mudou minha rotina de treinos. Sinto-me mais energizado
-                            e focado!"</p>
-                        <h4>- Ana S.</h4>
+                        <div class="cards-content">
+                            <p>"O Vital boost Energy MAX realmente mudou minha rotina de treinos. Sinto-me mais energizado
+                                e focado!"</p>
+                            <h4>- Ana S.</h4>
+                        </div>
                     </div>
                     <div class="depoimento-cards">
                         <img src="images/depoimento-selfie-lucas.jpg" alt="selfie do cliente Lucas M.">
@@ -144,7 +147,7 @@
             <section id="contato">
                 <h3>Entre em contato conosco!</h3>
                 <p>O pagamento e mais informações podem ser sanados ao apertar o botão!</p>
-                <button id="btn-contato">Entre em contato!</button>
+                <button id="btn-contato" onclick="mandarMsg()"> Entre em contato conosco!</button>
             </section>
 
             <div id="form-contato" class="page">
