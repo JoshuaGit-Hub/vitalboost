@@ -4,6 +4,7 @@
 @import url(cabecalho.css);
 @import url(depoimentos.css);
 @import url(contato.css);
+@import url(windowContato.css);
 
 * {
     margin: 0;
