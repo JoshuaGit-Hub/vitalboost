@@ -1,6 +1,5 @@
 @import url(beneficios.css);
 @import url(produtos.css);
-@import url(mediaQueries.css);
 @import url(hero.css);
 @import url(cabecalho.css);
 @import url(depoimentos.css);
@@ -32,4 +31,57 @@ body {
     color: var(--preto-suave);
     margin-top: 65px;
     background-color: #FAFAFA;
+}
+
+@media screen and (max-width: 826px) {
+    
+    /*Hero section*/
+    .navbar #lista_1 {
+        display: none;
+    }
+
+    #menu-hamburguer {
+        display: inline-flex;
+    }
+
+    .hero {
+        flex-direction: column;
+        height: 400px;
+        gap: 30px;
+    }
+
+    .cta-comprar {
+        margin-top: auto;
+    }
+
+    .hero-image {
+        display: none;
+    }
+    /*Contato section*/
+    #container-info {
+        flex-direction: column;
+        margin-left: 0;
+        gap: 15px;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    #marca {
+        font-size: 1.5rem;
+    }
+
+    #logo-nav {
+        width: 40px;
+    }
+
+    #navbar {
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    body {
+        margin-top: 60px;
+    }
 }
