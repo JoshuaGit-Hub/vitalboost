@@ -35,7 +35,7 @@ body {
 }
 
 @media screen and (max-width: 826px) {
-    
+
     /*Hero section*/
     .navbar #lista_1 {
         display: none;
@@ -58,11 +58,22 @@ body {
     .hero-image {
         display: none;
     }
+
     /*Contato section*/
     #container-info {
         flex-direction: column;
         margin-left: 0;
         gap: 15px;
+    }
+
+    /*Janela de formulário*/
+
+    #contato-form {
+        width: 100%;
+    }
+
+    #content {
+        display: none;
     }
 
 }
@@ -78,6 +89,24 @@ body {
 
     #navbar {
         height: 250px;
+    }
+
+    /*Contato section*/
+
+    /*Janela de formulário*/
+
+    #form-window {
+        width: 98%;
+        padding: 30px;
+    }
+
+    #contato-form {
+        width: 100%;
+    }
+
+    #window_success, #window_failed {
+        width: 350px;
+        height: 320px;
     }
 }
 

@@ -163,7 +163,7 @@
 
             <div id="form-window">
                 <form id="contato-form">
-                    <h3>Mande um email</h3>
+                    <h3>Mande um email!</h3>
                     <label for="nome">Nome:</label>
                     <input type="text" id="nome" name="nome" required>
 
@@ -173,11 +173,20 @@
                     <label for="mensagem">Mensagem:</label>
                     <textarea id="mensagem" name="mensagem" required></textarea>
 
-                    <button type="submit" id="btn_send"><i class="fa-solid fa-envelope"></i> Enviar</button>
+                    <button type="submit" id="btn_send"> Enviar <i class="fa-solid fa-envelope"></i></button>
                 </form>
+                <div id="content">
+                    <p>📱 Você também pode entrar em contato pelo <span class="typewriter-wrapper"><span class="typewriter">WhatsApp!</span></span></p>
+                    <img src="images/qrcode-whatsapp.png" alt="QR Code do WhatsApp da empresa">
+                </div>
+                <div id="close_btn">
+                    <i class="fa-solid fa-xmark fa-2x"></i>
+                </div>
             </div>
         </main>
     </div>
+
+
 
     <div id="cart" class="page">
         <h2>Carrinho de Compras</h2>
@@ -233,6 +242,25 @@
             </details>
         </div>
     </section>
+
+    <div id="window_success">
+        <div id="circle_check">
+            <div id="bar_one-check"></div>
+            <div id="bar_two-check"></div>
+        </div>
+        <h3>Mensagem enviada com sucesso!</h3>
+    </div>
+
+    <div id="window_failed">
+        <div id="circle_failed">
+            <div id="bar_one-failed"></div>
+            <div id="bar_two-failed"></div>
+        </div>
+        <h3>Falha ao enviar mensagem</h3>
+        <p id="para_error">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui iusto est odit debitis hic
+            omnis voluptatem, at illum temporibus esse incidunt provident. Iste, quae animi enim molestiae nisi dolor
+            voluptate.</p>
+    </div>
 
     <footer id="rodape">
         <p>&copy; 2025 VitalBoost. Todos os direitos reservados.</p>

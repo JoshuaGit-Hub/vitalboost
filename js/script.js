@@ -56,5 +56,3 @@ btnEmail.addEventListener('click', () => {
     windowForm.classList.add('active');
     overlay.classList.add('ativo');
 });
-
-// Formulário
