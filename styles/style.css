@@ -91,6 +91,10 @@ body {
         height: 250px;
     }
 
+    #marca {
+        font-size: 1.3rem;
+    }
+
     /*Contato section*/
 
     /*Janela de formulário*/
