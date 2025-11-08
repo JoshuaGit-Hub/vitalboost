@@ -136,7 +136,7 @@
     left: 0;
     transform: translate(0px, 0px);
     width: 100%;
-    padding: 20px;
+    padding: 10px 15px;
     background-color: var(--verde-principal);
     display: none;
     transition: transform 1s ease;
@@ -144,11 +144,11 @@
 
 .menu-hamburguer-content.ativo {
     display: block;
-    transform: translateY(65px);
+    transform: translateY(59px);
 }
 
 .menu-hamburguer-content ul {
-    gap: 50px;
+    gap: 30px;
 }
 
 #menu-hamburguer {
