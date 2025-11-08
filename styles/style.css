@@ -91,8 +91,21 @@ body {
         height: 250px;
     }
 
+    #cabecalho {
+        padding: 11px 12px;
+    }
+
     #marca {
         font-size: 1.3rem;
+    }
+
+    #menu-hamburguer {
+        padding: 8px;
+    }
+
+    .bars {
+        width: 20px;
+        height: 3px;
     }
 
     /*Contato section*/
