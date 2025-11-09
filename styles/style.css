@@ -104,7 +104,32 @@ body {
     #content {
         display: none;
     }
+}
 
+@media screen and (max-width: 810px) {
+    #cart {
+        width: 100%;
+    }
+
+    .qnt-container {
+        width: 130px;
+        height: 39px;
+    }
+
+    .menos {
+        font-size: 1.2rem;
+    }
+
+    .mais {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #checkout-btn {
+        padding: 14px 22px;
+        width: 176px;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -154,6 +179,23 @@ body {
         width: 350px;
         height: 320px;
     }
+
+    /* item carrinho */
+
+    .items {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .items img {
+        margin: auto;
+    }
+
+    .items h3 {
+        text-align: center;
+        margin-top: 20px;
+    }
+
 }
 
 @media screen and (max-width: 425px) {
