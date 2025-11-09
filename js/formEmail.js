@@ -70,7 +70,7 @@ function sendForm(nome, email, message) {
 
         setTimeout(() => {
             windowSuccess.classList.remove('active');
-        }, 3850);
+        }, 4000);
 
         btnSend.disabled = false;
         btnSend.textContent = 'Enviar';

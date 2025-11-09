@@ -1,6 +1,6 @@
 // Carrinho
 
-const btnCarrinho = document.querySelector('#btn-carrinho');
+const btnCarrinho = document.querySelector('#btn_carrinho');
 const iconCarrinho = document.querySelector('#carrinho_icon');
 
 let carrinhoAtivo = false;

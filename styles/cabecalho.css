@@ -80,7 +80,7 @@
     transform: translateY(1px);
 }
 
-#btn-carrinho {
+.btn-carrinho {
     margin-left: 60px;
     margin-right: 10px;
     width: 70px;
@@ -95,11 +95,19 @@
     right: 30px;
     bottom: 30px;
     z-index: 1;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .5s ease;
 }
 
-#btn-carrinho:hover {
+.btn-carrinho:hover {
     transform: scale(1.1);
     box-shadow: 3px 2px 6px rgba(0, 0, 0, 0.495);
+}
+
+.btn-carrinho.show {
+    opacity: 1;
+    pointer-events: all;
 }
 
 #carrinho_icon {
@@ -165,22 +173,4 @@
     width: 30px;
     height: 4px;
     background-color: var(--branco);
-}
-
-#overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.434);
-    z-index: 10;
-    pointer-events: none;
-    transition: opacity .3s ease;
-    opacity: 0;
-}
-
-#overlay.ativo {
-    pointer-events: all;
-    opacity: 1;
 }

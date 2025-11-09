@@ -12,7 +12,6 @@
     <link rel="shortcut icon" href="images/logo-suplemento-vital_boost-editada.png" type="image/x-icon">
 
 </head>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
 <body>
 
@@ -21,13 +20,13 @@
     <header id="cabecalho">
         <nav class="navbar">
             <div class="marca-container">
-                <a href="#home"><img src="images/logo-suplemento-vital_boost-editada.png" alt="logo da vital boost"
-                        id="logo-nav"></a>
-                <a href="#home" id="marca" class="link-nav">VitalBoost Energy MAX</a>
+                <a href="#home-section"><img src="images/logo-suplemento-vital_boost-editada.png"
+                        alt="logo da vital boost" id="logo-nav"></a>
+                <a href="#home-section" id="marca" class="link-nav">VitalBoost Energy MAX</a>
             </div>
 
             <ul id="lista_1">
-                <li><a href="#home" class="link-nav">Inicío</a></li>
+                <li><a href="#home" class="link-nav home-link">Inicío</a></li>
                 <li><a href="#produtos_section" class="link-nav">Produtos</a></li>
                 <li><a href="#sobre" class="link-nav">Sobre</a></li>
                 <li><a href="#contato" class="link-nav">Contato</a></li>
@@ -42,7 +41,7 @@
 
             <div class="menu-hamburguer-content">
                 <ul id="lista_2">
-                    <li><a href="#home" class="link-nav">Inicío</a></li>
+                    <li><a href="#home-section" class="link-nav home-link">Inicío</a></li>
                     <li><a href="#produtos_section" class="link-nav">Produtos</a></li>
                     <li><a href="#sobre" class="link-nav">Sobre</a></li>
                     <li><a href="#contato" class="link-nav">Contato</a></li>
@@ -51,12 +50,11 @@
         </nav>
     </header>
 
-    <button id="btn-carrinho"><i class="fa-solid fa-cart-shopping fa-2x" id="carrinho_icon"></i></button>
-
+    <button id="btn_carrinho" class="btn-carrinho show"><i class="fa-solid fa-cart-shopping fa-2x" id="carrinho_icon"></i></button>
 
     <div id="home" class="page active">
         <main id="main_content">
-            <section id="home">
+            <section id="home-section">
                 <div class="hero">
                     <div class="hero-content">
                         <h1>VitalBoost <span id="hero_text_energyMax">Energy MAX</span></h1>
@@ -178,22 +176,55 @@
                 <div id="content">
                     <p>📱 Você também pode entrar em contato pelo <span class="typewriter-wrapper"><span
                                 class="typewriter">WhatsApp!</span></span></p>
-                    <img src="images/qrcode-whatsapp.png" alt="QR Code do WhatsApp da empresa">
                 </div>
                 <div id="close_btn">
                     <i class="fa-solid fa-xmark fa-2x"></i>
                 </div>
             </div>
+
+            <section id="faq" aria-label="Perguntas frequentes">
+                <h2>Perguntas Frequentes</h2>
+                <div class="faq-list">
+                    <details class="faq-iten">
+                        <summary class="faq-question">Posso tomar o Energy Max todos os dias?</summary>
+                        <div class="faq-answer">
+                            <p>Sim, desde que respeitando a dose indicada no rótulo. Não exceda a quantidade
+                                recomendada.</p>
+                        </div>
+                    </details>
+
+                    <details class="faq-iten">
+                        <summary class="faq-question">O Energy MAX tem contradições?</summary>
+                        <div class="faq-answer">
+                            <p>Não recomendamos o uso para menores de 18 anos, gestantes ou pessoas com problemas
+                                cardíacos.
+                                Consulte um médico em caso de dúvidas.
+                            </p>
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary class="faq-question">O produto é vegano?</summary>
+                        <div class="faq-answer">
+                            <p>Sim, 100% vegano. Utilizamos taurina de origem sintética.</p>
+                        </div>
+                    </details>
+                </div>
+            </section>
         </main>
     </div>
 
-
-
     <div id="cart" class="page">
         <h2>Carrinho de Compras</h2>
-        <div id="cart-items"></div>
+        <button id="close_cart" class="close-cart">Fechar carrinho</button>
+        <div id="cart-items">
+            <div id="empty-cart">
+                <i class="fa-solid fa-cart-shopping fa-2x"></i>
+                <h3>Carrinho Vazio..</h3>
+            </div>
+        </div>
         <div id="cart-total"></div>
-        <button id="checkout-button">Finalizar Compra</button>
+        <button id="checkout-btn">Finalizar Compra</button>
     </div>
 
     <div id="checkout" class="page">
@@ -216,33 +247,6 @@
         </form>
     </div>
 
-    <section id="faq" aria-label="Perguntas frequentes">
-        <h2>Perguntas Frequentes</h2>
-        <div class="faq-list">
-            <details class="faq-iten">
-                <summary class="faq-question">Posso tomar o Energy Max todos os dias?</summary>
-                <div class="faq-answer">
-                    <p>Sim, desde que respeitando a dose indicada no rótulo. Não exceda a quantidade recomendada.</p>
-                </div>
-            </details>
-
-            <details class="faq-iten">
-                <summary class="faq-question">O Energy MAX tem contradições?</summary>
-                <div class="faq-answer">
-                    <p>Não recomendamos o uso para menores de 18 anos, gestantes ou pessoas com problemas cardíacos.
-                        Consulte um médico em caso de dúvidas.
-                    </p>
-                </div>
-            </details>
-
-            <details class="faq-item">
-                <summary class="faq-question">O produto é vegano?</summary>
-                <div class="faq-answer">
-                    <p>Sim, 100% vegano. Utilizamos taurina de origem sintética.</p>
-                </div>
-            </details>
-        </div>
-    </section>
 
     <div id="window_success">
         <div id="circle_check">
@@ -268,8 +272,10 @@
     </footer>
 
     <script src="https://kit.fontawesome.com/7d9a47bb9b.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="js/script.js"></script>
     <script src="js/formEmail.js"></script>
+    <script src="js/cart.js"></script>
 </body>
 
 </html>
